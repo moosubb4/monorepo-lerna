@@ -8,9 +8,9 @@ using lerna to manage monorepo with react-ts and nestjs-ts
 
 ### Remove .git
 
-> **for window**rmdir .git
+> **for window** rmdir .git
 
-> **for mac**rm -rf .git
+> **for mac** rm -rf .git
 
 ### Reference
 
