@@ -11,3 +11,7 @@ using lerna to manage monorepo with react-ts and nestjs-ts
 > **for window**rmdir .git
 
 > **for mac**rm -rf .git
+
+### Reference
+
+[Lerna monorepo](https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83)
