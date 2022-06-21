@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { QueryPayload } from "../../shared/interface/simple-query";
 
 function App() {
   return (
@@ -18,6 +19,16 @@ function App() {
         >
           Learn React
         </a>
+
+        <button
+          onClick={() => {
+            fetch("http://localhost:3000/", {})
+              .then((response) => response.json())
+              .then((data: QueryPayload) => console.log(data.payload));
+          }}
+        >
+          GET SOME DATA
+        </button>
       </header>
     </div>
   );
