@@ -21,8 +21,8 @@ function App() {
         </a>
 
         <button
-          onClick={() => {
-            fetch("http://localhost:3000/", {})
+          onClick={(): void => {
+            fetch("http://localhost:3000", {})
               .then((response) => response.json())
               .then((data: QueryPayload) => console.log(data.payload));
           }}

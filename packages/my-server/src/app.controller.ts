@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) { }
 
   @Get()
-  getHello(props: QueryPayload): string {
-    return this.appService.getHello(props);
+  getHello(): QueryPayload {
+    return this.appService.getHello();
   }
 }
