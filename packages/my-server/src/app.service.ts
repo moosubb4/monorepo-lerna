@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
-
+import { QueryPayload } from '../../shared/interface/simple-query';
 @Injectable()
 export class AppService {
-  getHello(): string {
+  getHello(props: QueryPayload): string {
+    console.log(props);
     return 'Hello World!';
   }
 }
